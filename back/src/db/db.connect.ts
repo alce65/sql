@@ -14,7 +14,7 @@ export const dbSqlConnect = () => {
   const connectionData = {
     host: process.env.DB_HOST || 'localhost:3306',
     user: process.env.DB_USER || 'root',
-    passwd: process.env.DB_PASSWD || '65@Alces',
+    passwd: process.env.DB_PASSWD,
     database: process.env.DB_NAME || 'sample',
   };
 
